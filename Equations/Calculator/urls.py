@@ -1,8 +1,7 @@
-from django.urls import path
-
+from django.urls import path # type: ignore
 from . import views
 
-urlpatterns = {
+urlpatterns = [
     path("", views.index, name="index"),
-    path("<str:name>", views.greet, name="greet"),
-}
+    path("engineering/", views.engineering, name="engineeringCalculator")
+]

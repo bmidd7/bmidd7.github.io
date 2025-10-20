@@ -1,9 +1,9 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.http import HttpResponse # type: ignore
+from django.shortcuts import render # type: ignore
 
 # Create your views here.
 def index(request):
     return render(request, "CodeForEachWebpage/HomeScreen.html")
 
-def greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+def engineering(request):
+    return render(request, "CodeForEachWebpage/EngineeringCalculator.html")
