@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,19 +6,24 @@
         <title>
             Calculator Main Menu
         </title>
-        <style>
-            body{
-                background-color: rgba(127, 255, 212, 0.555);
-            }
-        </style>
+        <link rel="stylesheet" href="{% static 'HomeScreen/css/Style.css' %}">
     </head>
     <body>
         <h1>
-            This is the homepage for my calculator!
+            This is the Main Menu for My Calculator!
         </h1>
+        <h2>
+            Please Select Which Calculator You Will Use
+        </h2>
         <h4>
             <a href="{% url 'engineeringCalculator' %}">
                 Engineering Calculator
+            </a>,
+            <a>
+                Science Calculator
+            </a>,
+            <a>
+                Math Calculator
             </a>
         </h4>
     </body>
