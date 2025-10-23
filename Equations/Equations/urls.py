@@ -22,6 +22,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("Calculator/",  include("Calculator.urls"))
+    path("Calculator/",  include("Calculator.urls")),
     path("health/", lambda request: HttpResponse("OK", status=200)),
 ]
