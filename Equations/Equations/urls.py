@@ -23,7 +23,6 @@ from Calculator.views import my_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("Calculator/",  include("Calculator.urls")),
+    path("",  include("Calculator.urls")),
     path("health/", lambda request: HttpResponse("OK", status=200)),
-    path('', views.home, name='home'),
 ]
