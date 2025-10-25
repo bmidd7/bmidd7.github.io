@@ -1,11 +1,16 @@
 $DesktopBackgroundColor: rgba(160, 180, 200, 1);
 $MobileBackgrounColor: rgb(250, 162, 100);
 
-$BackgroundForPOEButton: rgba(186, 22, 12, 0.8);
-$BackgroundForMathButton: rgba(80, 193, 245, 0.8);
-$BackgroundForScienceButton: rgba(80, 245, 193, 0.8);
-$BackgroundForGeneralButton: rgba(120, 170, 180, 0.8);
+$BackgroundForPOEButton: rgba(186, 22, 12, 0.7);
+$BackgroundForMathButton: rgba(80, 193, 245, 0.7);
+$BackgroundForScienceButton: rgba(80, 245, 193, 0.7);
+$BackgroundForGeneralButton: rgba(120, 170, 180, 0.7);
 
+
+$ButtonWidth: 230px;
+$ButtonHeight: 55px;
+
+$ColorOfButtonText: rgba(0, 0, 0, 1);
 
 
 @media (max-width:600px){
@@ -25,33 +30,54 @@ $BackgroundForGeneralButton: rgba(120, 170, 180, 0.8);
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    justify-content: center;
 };
 
-#Container > div {
-    margin: auto;
+#Container > div a{
     padding: 25px;
-    width: 230px;
-    height: 55px;
+    width: $ButtonWidth;
+    height: $ButtonHeight;
+    text-decoration: none;
+    color: $ColorOfButtonText;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 };
 
+
+
 #POE{
     background-color: $BackgroundForPOEButton
+};
+
+#POE a:hover{
+    cursor: pointer;
 };
 
 #Math{
     background-color: $BackgroundForMathButton
 };
 
+#Math a:hover{
+    cursor: pointer;
+};
+
 #Science{
     background-color: $BackgroundForScienceButton
 };
 
+#Science a:hover{
+    cursor: pointer;
+};
+
 #General{
     background-color: $BackgroundForGeneralButton
+};
+
+#General a:hover{
+    cursor: pointer;
 };
 
 
