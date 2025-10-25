@@ -3,6 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.00">
         <title>
             Calculator Main Menu
         </title>
@@ -15,16 +16,27 @@
         <h2>
             Please Select Which Calculator You Will Use
         </h2>
-        <h4>
-            <a href="{% url 'engineeringCalculator' %}">
-                Engineering Calculator
-            </a>,
-            <a>
-                Science Calculator
-            </a>,
-            <a>
-                Math Calculator
-            </a>
-        </h4>
+        <div id="Container">
+            <div id="POE">
+                <a href="{% url 'engineeringCalculator' %}">
+                    Principles of Engineering Calculator
+                </a>
+            </div>
+            <div id="Math">
+                <a href="{% url 'mathCalculator' %}">
+                    Math Calculator
+                </a>
+            </div>
+            <div id="Science">
+                <a href="{% url 'scienceCalculator' %}">
+                    Science Calculator
+                </a>
+            </div>
+            <div id="General">
+                <a href="{% url 'generalCalculator' %}">
+                    General Calculator
+                </a>
+            </div>
+        </div>
     </body>
 </html>

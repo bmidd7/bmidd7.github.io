@@ -1,15 +1,66 @@
-$BackgroundColor: rgb(11, 71, 131);
+$DesktopBackgroundColor: rgba(160, 180, 200, 1);
+$MobileBackgrounColor: rgb(250, 162, 100);
 
-body {
-    background-color: $BackgroundColor;
-}
+$BackgroundForPOEButton: rgba(186, 22, 12, 0.8);
+$BackgroundForMathButton: rgba(80, 193, 245, 0.8);
+$BackgroundForScienceButton: rgba(80, 245, 193, 0.8);
+$BackgroundForGeneralButton: rgba(120, 170, 180, 0.8);
+
+
+
+@media (max-width:600px){
+    body{
+        background-color: $MobileBackgrounColor
+    };
+};
+
+@media (min-width:601px){
+    body {
+    background-color: $DesktopBackgroundColor;
+    };
+};
+
+
+#Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+};
+
+#Container > div {
+    margin: auto;
+    padding: 25px;
+    width: 230px;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+#POE{
+    background-color: $BackgroundForPOEButton
+};
+
+#Math{
+    background-color: $BackgroundForMathButton
+};
+
+#Science{
+    background-color: $BackgroundForScienceButton
+};
+
+#General{
+    background-color: $BackgroundForGeneralButton
+};
+
 
 h1 {
     text-align: center;
     font-size: 60px;
-}
+};
 
 h2{
     text-align: center;
     font-size: 36px;
-}
+};

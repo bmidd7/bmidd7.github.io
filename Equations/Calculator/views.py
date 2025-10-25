@@ -7,3 +7,12 @@ def index(request):
 
 def engineering(request):
     return render(request, "CodeForEachWebpage/EngineeringCalculator.html")
+
+def science(request):
+    return render(request, "CodeForEachWebpage/ScienceCalculator.html")
+
+def math(request):
+    return render(request, "CodeForEachWebpage/MathCalculator.html")
+
+def general(request):
+    return render(request, "CodeForEachWebpage/GeneralCalculator.html")
