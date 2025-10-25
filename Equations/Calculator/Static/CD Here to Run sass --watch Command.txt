@@ -1,0 +1,2 @@
+command is:
+sass --watch EngineeringCalculator/css/Style.scss:EngineeringCalculator/css/Style.css HomeScreen/css/Style.scss:HomeScreen/css/Style.css MathCalculator/css/Style.scss:MathCalculator/css/Style.css ScienceCalculator/css/Style.scss:ScienceCalculator/css/Style.css
