@@ -46,39 +46,30 @@ $ColorOfButtonText: rgba(0, 0, 0, 1);
     align-items: center;
 };
 
+#container > div a:hover{
+    transform: scale(1.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+};
+
 
 
 #POE{
     background-color: $BackgroundForPOEButton
 };
 
-#POE a:hover{
-    cursor: pointer;
-};
-
 #Math{
     background-color: $BackgroundForMathButton
-};
-
-#Math a:hover{
-    cursor: pointer;
 };
 
 #Science{
     background-color: $BackgroundForScienceButton
 };
 
-#Science a:hover{
-    cursor: pointer;
-};
 
 #General{
     background-color: $BackgroundForGeneralButton
 };
 
-#General a:hover{
-    cursor: pointer;
-};
 
 
 h1 {

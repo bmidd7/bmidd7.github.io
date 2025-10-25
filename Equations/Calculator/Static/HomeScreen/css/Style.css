@@ -28,36 +28,25 @@
   align-items: center;
 }
 
-#POE {
-  background-color: rgba(186, 22, 12, 0.7);
+#container > div a:hover {
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-#POE a:hover {
-  cursor: pointer;
+#POE {
+  background-color: rgba(186, 22, 12, 0.7);
 }
 
 #Math {
   background-color: rgba(80, 193, 245, 0.7);
 }
 
-#Math a:hover {
-  cursor: pointer;
-}
-
 #Science {
   background-color: rgba(80, 245, 193, 0.7);
 }
 
-#Science a:hover {
-  cursor: pointer;
-}
-
 #General {
   background-color: rgba(120, 170, 180, 0.7);
-}
-
-#General a:hover {
-  cursor: pointer;
 }
 
 h1 {
