@@ -11,8 +11,9 @@
 #Container {
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 30px;
   justify-content: center;
+  overflow: visible;
 }
 
 #Container > div a {
@@ -26,26 +27,28 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-#container > div a:hover {
+#Container > div a:hover {
+  cursor: pointer;
   transform: scale(1.15);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-#POE {
+#POE a {
   background-color: rgba(186, 22, 12, 0.7);
 }
 
-#Math {
+#Math a {
   background-color: rgba(80, 193, 245, 0.7);
 }
 
-#Science {
+#Science a {
   background-color: rgba(80, 245, 193, 0.7);
 }
 
-#General {
+#General a {
   background-color: rgba(120, 170, 180, 0.7);
 }
 

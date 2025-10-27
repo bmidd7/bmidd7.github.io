@@ -29,8 +29,9 @@ $ColorOfButtonText: rgba(0, 0, 0, 1);
 #Container{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
+    overflow: visible
 };
 
 #Container > div a{
@@ -44,29 +45,31 @@ $ColorOfButtonText: rgba(0, 0, 0, 1);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 };
 
-#container > div a:hover{
+#Container > div a:hover{
+    cursor: pointer;
     transform: scale(1.15);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 };
 
 
 
-#POE{
+#POE a{
     background-color: $BackgroundForPOEButton
 };
 
-#Math{
+#Math a{
     background-color: $BackgroundForMathButton
 };
 
-#Science{
+#Science a{
     background-color: $BackgroundForScienceButton
 };
 
 
-#General{
+#General a{
     background-color: $BackgroundForGeneralButton
 };
 
