@@ -29,7 +29,7 @@ $ColorOfButtonText: rgba(0, 0, 0, 0.95);
 #Container{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 34px;
     justify-content: center;
     overflow: visible
 };
@@ -41,11 +41,13 @@ $ColorOfButtonText: rgba(0, 0, 0, 0.95);
     text-decoration: none;
     color: $ColorOfButtonText;
     text-align: center;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.1s ease, box-shadow 0.1s ease;
     overflow: hidden;
+    border-radius: 20px;
 };
 
 #Container > div a:hover{
