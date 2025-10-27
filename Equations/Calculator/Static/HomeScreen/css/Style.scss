@@ -1,16 +1,16 @@
 $DesktopBackgroundColor: rgba(160, 180, 200, 1);
 $MobileBackgrounColor: rgb(250, 162, 100);
 
-$BackgroundForPOEButton: rgba(186, 22, 12, 0.7);
+$BackgroundForPOEButton: rgba(186, 22, 12, 0.65);
 $BackgroundForMathButton: rgba(80, 193, 245, 0.7);
 $BackgroundForScienceButton: rgba(80, 245, 193, 0.7);
 $BackgroundForGeneralButton: rgba(120, 170, 180, 0.7);
 
 
 $ButtonWidth: 230px;
-$ButtonHeight: 165px;
+$ButtonHeight: 65px;
 
-$ColorOfButtonText: rgba(0, 0, 0, 1);
+$ColorOfButtonText: rgba(0, 0, 0, 0.95);
 
 
 @media (max-width:600px){
@@ -57,16 +57,21 @@ $ColorOfButtonText: rgba(0, 0, 0, 1);
 
 
 #POE a{
-    background-color: $BackgroundForPOEButton
+    background:
+        linear-gradient($BackgroundForPOEButton, $BackgroundForPOEButton),
+        url('../icons/EngineeringButton.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: contain, contain;
 };
 
 #POE a img{
     z-index: 0;
-    inset: 0;
     object-fit: contain;
-    position: absolute;
-    opacity: 0.7;
-
+    position: relative;
+    opacity: 0.9;
+    height: 75px;
+    width: 75px;
 };
 
 #POE a span{
