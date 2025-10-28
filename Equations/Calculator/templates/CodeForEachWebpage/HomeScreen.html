@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.00">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.00">
         <title>
             Calculator Main Menu
         </title>
-        <link rel="stylesheet" href="{% static 'HomeScreen/css/Style.css' %}">
+        <link rel="icon" type="image/x-icon" href="{% static 'HomeScreen/icons/Favicon.ico' %}">
+        <link rel="stylesheet" href="{% static 'HomeScreen/css/Style.css' %}?v={{ now|date:'U' }}">
     </head>
     <body>
         <h1>
@@ -18,18 +18,18 @@
         </h2>
         <div id="Container">
             <div id="POE">
-                <a href="{% url 'engineeringCalculator' %}">
+                <a href="{% url 'principlesOfEngineeringCalculator' %}">
                     Principles of Engineering Calculator
                 </a>
             </div>
             <div id="Math">
-                <a href="{% url 'mathCalculator' %}">
-                    Math Calculator
+                <a href="{% url 'algebraIIHonorsCalculator' %}">
+                    Algebra Calculator
                 </a>
             </div>
             <div id="Science">
-                <a href="{% url 'scienceCalculator' %}">
-                    Science Calculator
+                <a href="{% url 'chemistryIACPCalculator' %}">
+                    Chemistry Calculator
                 </a>
             </div>
             <div id="General">
