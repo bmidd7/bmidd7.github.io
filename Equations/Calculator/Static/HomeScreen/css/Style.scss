@@ -1,11 +1,17 @@
 $DesktopBackgroundColor: rgba(160, 180, 200, 1);
 $MobileBackgrounColor: rgb(250, 162, 100);
+$ChromebookBackgroundColor: $MobileBackgrounColor; //rbga();
 
 $BackgroundForPOEButton: rgba(186, 22, 12, 0.7);
 $BackgroundForMathButton: rgba(80, 193, 245, 0.7);
 $BackgroundForScienceButton: rgba(80, 245, 193, 0.7);
 $BackgroundForGeneralButton: rgba(120, 170, 180, 0.7);
-
+/*
+$ChromebookBackgroundForPOEButton: rgba(.07);
+$ChromebookBackgroundForMathButton: rgba(.07);
+$ChromebookBackgroundForScienceButton: rgba(.07);
+$ChromebookBackgroundForGeneralButton: rgba(.07);
+*/
 
 $ButtonWidth: 230px;
 $ButtonHeight: 65px;
@@ -13,15 +19,17 @@ $ButtonHeight: 65px;
 $ColorOfButtonText: rgba(0, 0, 0, 0.85);
 
 
-@media (max-width:600px){
-    body{
-        background-color: $MobileBackgrounColor
-    };
+.ChromeOS{
+    background-color: $ChromebookBackgroundColor;
 };
 
-@media (min-width:601px){
-    body {
-    background-color: $DesktopBackgroundColor;
+.Windows10, .Windows11, .iOS, .macOS, .Linux, .Android{
+    @media (max-width:600px){
+        background-color: $MobileBackgrounColor;
+    };
+
+    @media (min-width:601px){
+        background-color: $DesktopBackgroundColor;
     };
 };
 

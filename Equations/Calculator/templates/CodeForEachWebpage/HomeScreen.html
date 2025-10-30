@@ -3,11 +3,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.00">
+
         <title>
             Calculator Main Menu
         </title>
+
         <link rel="icon" type="image/x-icon" href="{% static 'HomeScreen/icons/Favicon.ico' %}">
         <link rel="stylesheet" href="{% static 'HomeScreen/css/Style.css' %}?v={{ now|date:'U' }}">
+
+        <script src="{% static 'HomeScreen/js/DetectOS.js' %}" defer></script>
     </head>
     <body>
         <h1>
@@ -16,6 +20,9 @@
         <h2>
             Please Select Which Calculator You Will Use
         </h2>
+        <p>
+
+        </p>
         <div id="Container">
             <div id="POE">
                 <a href="{% url 'principlesOfEngineeringCalculator' %}">
